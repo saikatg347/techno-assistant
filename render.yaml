@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: techno-assistant
+    env: python
+    plan: free
+    buildCommand: |
+      apt-get update && apt-get install -y libssl-dev
+      pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
