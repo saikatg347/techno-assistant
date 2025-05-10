@@ -1,0 +1,22 @@
+# Ignore the virtual environment directory
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore Flask's config files if any (e.g., secret keys, etc.)
+instance/
+
+# Ignore environment variable files (if you have .env files for local development)
+.env
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore the Flask development server database (if using SQLite, for example)
+*.db
